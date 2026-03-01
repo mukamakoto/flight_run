@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>フライト待機ラン | 待ち時間を、冒険に変えよう。</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'serif': ['Playfair Display', 'serif'],
+                        'sans': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+        .smooth-scroll { scroll-behavior: smooth; }
+        .fade-in {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="smooth-scroll bg-white text-gray-800 antialiased">
+    <!-- ナビゲーション（薄い背景＋細いボーダー） -->
+    <nav class="sticky top-0 z-50 border-b border-gray-200 bg-white/95 backdrop-blur-sm">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16 md:h-20">
+                <a href="#" class="text-xl md:text-2xl font-bold text-gray-900 font-serif">フライト待機ラン</a>
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="#concept" class="text-sm font-medium text-gray-600 hover:text-sky-600 transition">CONCEPT</a>
+                    <a href="#service" class="text-sm font-medium text-gray-600 hover:text-sky-600 transition">SERVICE</a>
+                    <a href="#features" class="text-sm font-medium text-gray-600 hover:text-sky-600 transition">FEATURES</a>
+                    <a href="#flow" class="text-sm font-medium text-gray-600 hover:text-sky-600 transition">FLOW</a>
+                </div>
+                <a href="#cta" class="inline-block bg-amber-500 text-gray-900 px-5 py-2.5 rounded text-sm font-medium hover:bg-amber-400 transition">
+                    旅に申し込む
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO：世界を変える／旅に出よう テイスト -->
+    <section class="py-24 md:py-32 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto text-center">
+            <p class="text-sm uppercase tracking-widest text-sky-600 mb-6 fade-in">Flight Standby Run</p>
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight fade-in">
+                待ち時間を、<br>
+                冒険に変えよう。
+            </h1>
+            <p class="text-base md:text-lg text-gray-500 mb-10 fade-in">走るチカラを信じて、旅を進め</p>
+            <p class="text-lg md:text-xl text-gray-600 mb-12 max-w-2xl mx-auto leading-relaxed fade-in">
+                出発まであと数時間。その時間を、空港まわりを走る体験に。<br>
+                この広い世界を、わくわくしながら生き抜くために。次のフライトが、もう冒険の一歩になる。
+            </p>
+            <div class="fade-in">
+                <a href="#cta" class="inline-block bg-amber-500 text-gray-900 px-8 py-4 rounded text-base font-medium hover:bg-amber-400 transition">
+                    旅に申し込む
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONCEPT：片側画像・片側テキスト（6:4 程度） -->
+    <section id="concept" class="py-20 md:py-28 px-4 sm:px-6 lg:px-8 bg-sky-50">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-10 gap-12 md:gap-16 items-center">
+                <div class="md:col-span-6 fade-in">
+                    <img
+                        src="images/1.jpg"
+                        alt="空港周辺をランニングしている様子"
+                        class="w-full rounded-lg object-cover shadow-sm"
+                    />
+                </div>
+                <div class="md:col-span-4 fade-in">
+                    <p class="text-sm uppercase tracking-widest text-sky-600 mb-4">Introduction</p>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                        逆境こそ、<br>チャンス。
+                    </h2>
+                    <p class="text-gray-700 leading-relaxed mb-6">
+                        乗り継ぎや早朝便で空港に長くいる時間。世界は冒険に満ちています。ただ過ごすより、近隣を走って体を動かし、同じ境遇の仲間と出会う。フライト待機ランは、その「待ち時間」を特別な体験に変えるビジネスモデルです。
+                    </p>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        空港周辺の安全なコースを案内し、距離やペースを選べるランを提供。旅人同士のつながりや、地域との交流の場にもなります。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 待ち時間をどうしようか悩んでいる：画像＋短文 -->
+    <section class="py-20 md:py-28 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-10 gap-12 md:gap-16 items-center">
+                <div class="md:col-span-4 fade-in order-2 md:order-1">
+                    <p class="text-sm uppercase tracking-widest text-sky-600 mb-4">Before</p>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                        この世界の闇を照らす<br>灯が、君にも届きますように。
+                    </h2>
+                    <p class="text-gray-700 leading-relaxed">
+                        乗り継ぎまであと3時間。ラウンジで過ごすのもいいけど、なんとなくもったいない。毎日が謎解きの連続。そんなふうに悩んだことはありませんか？その答えは、一歩の向こうに。
+                    </p>
+                </div>
+                <div class="md:col-span-6 fade-in order-1 md:order-2">
+                    <img
+                        src="images/2.jpg"
+                        alt="待ち時間をどう過ごそうか悩んでいる様子"
+                        class="w-full rounded-lg object-cover shadow-sm"
+                    />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICE：想いを、世界へ届ける技術 テイスト -->
+    <section id="service" class="py-20 md:py-28 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto">
+            <p class="text-sm uppercase tracking-widest text-sky-600 mb-4 text-center">Service</p>
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-4">
+                想いを、世界へ届ける
+            </h2>
+            <p class="text-gray-600 text-center mb-16 max-w-2xl mx-auto">私たちは、待ち時間を「走る体験」に変える技術で、旅の価値を届けます。</p>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
+                <div class="fade-in p-6 rounded-xl border border-gray-200 bg-white shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 rounded-lg bg-sky-100 flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">待ち時間の有効活用</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">乗り継ぎや早朝到着の「空白時間」を、運動とリフレッシュの時間に。出発までに体を整え、フライトを気持ちよく迎えられます。</p>
+                </div>
+                <div class="fade-in p-6 rounded-xl border border-gray-200 bg-white shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 rounded-lg bg-sky-100 flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">安心のコース案内</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">空港周辺の安全で走りやすいルートを厳選。ガイド付きまたはセルフで、距離・ペースを選べるので初心者からランナーまで対応します。</p>
+                </div>
+                <div class="fade-in p-6 rounded-xl border border-gray-200 bg-white shadow-sm hover:shadow-md transition sm:col-span-2 lg:col-span-1">
+                    <div class="w-12 h-12 rounded-lg bg-sky-100 flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">旅仲間との出会い</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">同じ空港で時間を過ごすランナー同士が集まる場に。ビジネス・観光を問わず、旅の思い出がひとつ増えます。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ラン後のリラックス・仕事に取り組む様子 -->
+    <section class="py-20 md:py-28 px-4 sm:px-6 lg:px-8 bg-sky-50">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-10 gap-12 md:gap-16 items-center">
+                <div class="md:col-span-6 fade-in">
+                    <img
+                        src="images/3.jpg"
+                        alt="ラン後にリラックスして、新たに仕事に取り組める様子"
+                        class="w-full rounded-lg object-cover shadow-sm"
+                    />
+                </div>
+                <div class="md:col-span-4 fade-in">
+                    <p class="text-sm uppercase tracking-widest text-sky-600 mb-4">After</p>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                        無限の創造で、<br>冒険は続く。
+                    </h2>
+                    <p class="text-gray-700 leading-relaxed mb-6">
+                        ひと走りしたあとは、頭も体も軽い。空港のカフェやラウンジで、リラックスしながら仕事に取り組む。幾つものダンジョンをクリアしたその先に待つものは、分かち合う喜びと陽光きらめく新しい世界なのです。
+                    </p>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        待ち時間が「もったいない」から「ありがたい時間」に変わる体験を。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURES：感性がかたちになる瞬間 テイスト -->
+    <section id="features" class="py-20 md:py-28 px-4 sm:px-6 lg:px-8 bg-gray-50">
+        <div class="max-w-4xl mx-auto">
+            <p class="text-sm uppercase tracking-widest text-sky-600 mb-4 text-center">Features</p>
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-4">
+                感性がかたちになる瞬間
+            </h2>
+            <p class="text-gray-600 text-center mb-16 max-w-2xl mx-auto">目的や課題に寄り添いながら、旅の価値を最大限に引き出す仕組みをご用意しています。</p>
+            <ul class="space-y-8">
+                <li class="fade-in flex gap-6 items-start">
+                    <span class="flex-shrink-0 w-10 h-10 rounded-full border-2 border-sky-200 flex items-center justify-center text-sky-600 font-serif font-bold">1</span>
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-1">空港・時間帯に合わせた開催</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">主要空港や乗り継ぎの多い時間帯に合わせてランを設定。出発前の余裕時間に参加しやすいスケジュールで提供します。</p>
+                    </div>
+                </li>
+                <li class="fade-in flex gap-6 items-start">
+                    <span class="flex-shrink-0 w-10 h-10 rounded-full border-2 border-sky-200 flex items-center justify-center text-sky-600 font-serif font-bold">2</span>
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-1">距離・ペースを選べる複数コース</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">3kmのショートから10km以上のロングまで、体調やフライトまでの時間に合わせてコースを選択可能。ウォークのみの参加オプションも用意します。</p>
+                    </div>
+                </li>
+                <li class="fade-in flex gap-6 items-start">
+                    <span class="flex-shrink-0 w-10 h-10 rounded-full border-2 border-sky-200 flex items-center justify-center text-sky-600 font-serif font-bold">3</span>
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-1">荷物預かり・シャワー連携</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">手荷物の一時預かりや、空港・提携施設のシャワー利用案内など、ラン後にそのまま搭乗できるようサポートします。</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- FLOW：冒険のステップ -->
+    <section id="flow" class="py-20 md:py-28 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto">
+            <p class="text-sm uppercase tracking-widest text-sky-600 mb-4 text-center">Flow</p>
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-4">
+                旅に出る、まで。
+            </h2>
+            <p class="text-gray-600 text-center mb-16 max-w-2xl mx-auto">シンプルな3ステップで、あなたの冒険がはじまります。</p>
+            <div class="grid sm:grid-cols-3 gap-8 text-center">
+                <div class="fade-in">
+                    <div class="w-14 h-14 rounded-full bg-sky-100 text-sky-600 font-serif font-bold text-xl flex items-center justify-center mx-auto mb-4">1</div>
+                    <h3 class="font-semibold text-gray-900 mb-2">申し込み</h3>
+                    <p class="text-gray-600 text-sm">フライト日時・空港に合わせてランを選択し、Webから申し込み</p>
+                </div>
+                <div class="fade-in">
+                    <div class="w-14 h-14 rounded-full bg-sky-100 text-sky-600 font-serif font-bold text-xl flex items-center justify-center mx-auto mb-4">2</div>
+                    <h3 class="font-semibold text-gray-900 mb-2">集合・ラン</h3>
+                    <p class="text-gray-600 text-sm">空港の集合ポイントで合流し、ガイドとともにコースを走る</p>
+                </div>
+                <div class="fade-in">
+                    <div class="w-14 h-14 rounded-full bg-sky-100 text-sky-600 font-serif font-bold text-xl flex items-center justify-center mx-auto mb-4">3</div>
+                    <h3 class="font-semibold text-gray-900 mb-2">解散・搭乗</h3>
+                    <p class="text-gray-600 text-sm">シャワー・着替え後、そのまま搭乗手続きへ。体も心もすっきり</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA：共に、未来を作りましょう テイスト -->
+    <section id="cta" class="py-24 md:py-32 px-4 sm:px-6 lg:px-8 bg-sky-800">
+        <div class="max-w-2xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">
+                共に、未来を作りましょう。
+            </h2>
+            <p class="text-sky-100 mb-10">
+                長く記憶されるような、最高のひとときを。開催空港・日程から、自分に合ったランを選べます。
+            </p>
+            <a href="#" class="inline-block bg-amber-400 text-gray-900 px-8 py-4 rounded font-medium hover:bg-amber-300 transition">
+                旅に申し込む
+            </a>
+        </div>
+    </section>
+
+    <!-- フッター：シンプルにリンクを並べる -->
+    <footer class="border-t border-gray-200 py-8 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4">
+            <span class="text-gray-500 text-sm">© フライト待機ラン</span>
+            <div class="flex gap-6 text-sm">
+                <a href="#concept" class="text-gray-500 hover:text-sky-600">CONCEPT</a>
+                <a href="#service" class="text-gray-500 hover:text-sky-600">SERVICE</a>
+                <a href="#features" class="text-gray-500 hover:text-sky-600">FEATURES</a>
+                <a href="#flow" class="text-gray-500 hover:text-sky-600">FLOW</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript：1箇所にまとめ（React/Next.js 移行しやすいように） -->
+    <script>
+(function() {
+    var fadeTargets = document.querySelectorAll('.fade-in');
+    function checkFade() {
+        fadeTargets.forEach(function(el) {
+            var rect = el.getBoundingClientRect();
+            var winH = window.innerHeight;
+            if (rect.top < winH * 0.85) el.classList.add('visible');
+        });
+    }
+    window.addEventListener('scroll', checkFade);
+    window.addEventListener('load', checkFade);
+})();
+    </script>
+</body>
+</html>
